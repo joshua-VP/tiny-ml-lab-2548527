@@ -1,0 +1,40 @@
+{
+  "sample_rate": 16000,
+  "clip_samples": 16000,
+  "win_length": 480,
+  "hop_length": 320,
+  "n_fft": 512,
+  "n_mels": 40,
+  "n_mfcc": 10,
+  "mfcc_shape": [
+    49,
+    10
+  ],
+  "mfcc_args": {
+    "function": "librosa.feature.mfcc",
+    "center": false,
+    "n_mfcc": 10,
+    "n_fft": 512,
+    "win_length": 480,
+    "hop_length": 320,
+    "n_mels": 40
+  },
+  "labels": [
+    "stop",
+    "_unknown_",
+    "_silence_"
+  ],
+  "train_mean": -14.886438369750977,
+  "train_std": 77.1377182006836,
+  "input_shape": [
+    1,
+    49,
+    10,
+    1
+  ],
+  "input_dtype": "int8",
+  "input_scale": 0.03587663173675537,
+  "input_zero_point": 63,
+  "output_scale": 0.00390625,
+  "output_zero_point": -128
+}
